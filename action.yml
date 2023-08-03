@@ -16,5 +16,5 @@ runs:
   args:
     - action
     - upload
-    - --server=${{ inputs.server }}
+    - --url=${{ inputs.url }}
     - ${{ inputs.file }}
