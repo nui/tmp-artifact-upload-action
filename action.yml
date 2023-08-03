@@ -1,0 +1,16 @@
+# action.yml
+name: 'Tmp Artifact'
+description: 'Upload/Download to temporary artifact server'
+inputs:
+  file:  # id of input
+    description: 'File'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'docker://nuimk/tmp-artifact-action:dev'
+  args:
+    - action
+  #   - ${{ inputs.file }}
